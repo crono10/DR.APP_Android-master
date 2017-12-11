@@ -71,7 +71,7 @@ public class Inicio extends AppCompatActivity implements View.OnClickListener {
         mAuth.signInWithEmailAndPassword(usuario,contraseña).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
-             //   progressBar.setVisibility(View.GONE);
+               progressBar.setVisibility(View.GONE);
                 if (task.isSuccessful()){
                     Intent intent = new Intent(Inicio.this,menu2.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
