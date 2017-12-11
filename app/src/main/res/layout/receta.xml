@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="4dp">
+
+        <TextView
+            android:id="@+id/txtreceta"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.02"
+            android:gravity="center"
+            android:text="Receta"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="30sp" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        app:cardElevation="0dp">
+
+        <FrameLayout
+            android:id="@+id/Linea0"
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:layout_span="8"
+            android:background="#000"></FrameLayout>
+
+        <TextView
+            android:id="@+id/txtdoctor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.09"
+            android:text="DR.(A): Verónica Macín Chavez  CED. PROF.: 4564184"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+        
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        app:cardElevation="0dp">
+
+        <TextView
+            android:id="@+id/txtexpediente"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.09"
+            android:text="NO. DE EXPEDIENTE: 000324       FECHA: 28/04/2017"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        app:cardElevation="0dp">
+
+        <TextView
+            android:id="@+id/txtnombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.09"
+            android:text="NOMBRE: Madrid Bautista Elizabeth     SEXO: Femenino  "
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:cardElevation="0dp">
+
+        <TextView
+            android:id="@+id/txtalergias"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.09"
+            android:text="ALERGIAS: Negado"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        app:cardElevation="0dp">
+
+        <TextView
+            android:id="@+id/txtid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.09"
+            android:text="I.D. FARINGOAMIGDALITIS, ATITIS MEDIA"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        app:cardElevation="3dp">
+
+        <FrameLayout
+            android:id="@+id/Line"
+            android:layout_width="fill_parent"
+            android:layout_height="15dp"
+            android:layout_span="8"
+            android:background="#000"
+            android:visibility="invisible"></FrameLayout>
+
+        <TextView
+            android:id="@+id/txttratamiento"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.02"
+            android:gravity="center"
+            android:text="TRATAMIENTO"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="20sp" />
+    </android.support.v7.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+            <FrameLayout
+                android:id="@+id/Linea4"
+                android:layout_width="fill_parent"
+                android:layout_height="2px"
+                android:layout_span="8"
+                android:background="#000"></FrameLayout>
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.03"
+                android:text="1.- CEFALEXINA TAB 1GR"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                tools:textSize="17sp" />
+
+
+            <FrameLayout
+                android:id="@+id/Linea"
+                android:layout_width="fill_parent"
+                android:layout_height="2px"
+                android:layout_span="8"
+                android:background="#000"></FrameLayout>
+
+            <TextView
+                android:id="@+id/txthora1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.03"
+                android:text="1 tableta cada 8 horas durante 8 días vía de                              administración oral."
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                tools:textSize="14sp" />
+
+
+            <FrameLayout
+                android:id="@+id/Linea3"
+                android:layout_width="fill_parent"
+                android:layout_height="2px"
+                android:layout_span="8"
+                android:background="#000"></FrameLayout>
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.03"
+                android:text="2.- LEVODROPROPIZINA SOL 600MG/100ML"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                tools:textSize="17sp" />
+
+
+            <FrameLayout
+                android:id="@+id/Linea1"
+                android:layout_width="fill_parent"
+                android:layout_height="2px"
+                android:layout_span="8"
+                android:background="#000"></FrameLayout>
+
+            <TextView
+                android:id="@+id/txthora2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.03"
+                android:text="10 ML cada 8 horas durante 7 días vía de                             administración oral"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                tools:textSize="14sp" />
+
+
+            <FrameLayout
+                android:id="@+id/Linea5"
+                android:layout_width="fill_parent"
+                android:layout_height="2px"
+                android:layout_span="8"
+                android:background="#000"></FrameLayout>
+
+            <TextView
+                android:id="@+id/txt3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.03"
+                android:text="3.- ACIDO ASCORBICO SABOR NARANJA COMP EFERV 2GR"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                tools:textSize="17sp" />
+
+            <FrameLayout
+                android:id="@+id/Linea6"
+                android:layout_width="fill_parent"
+                android:layout_height="2px"
+                android:layout_span="8"
+                android:background="#000"></FrameLayout>
+
+            <TextView
+                android:id="@+id/txthora3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.03"
+                android:text="1 tableta cada 24 horas durante 10 días via de administración oral, disolver en un vaso con agua por las mañanas"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                tools:textSize="14sp" />
+
+            <FrameLayout
+                android:id="@+id/Linea2"
+                android:layout_width="fill_parent"
+                android:layout_height="2px"
+                android:layout_span="8"
+                android:background="#000"></FrameLayout>
+
+            <TextView
+                android:id="@+id/txt6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.03"
+                android:text="4.- CLARITROMICINA TAB 500 MG"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                tools:textSize="17sp" />
+
+            <FrameLayout
+                android:id="@+id/Linea7"
+                android:layout_width="fill_parent"
+                android:layout_height="2px"
+                android:layout_span="8"
+                android:background="#000"></FrameLayout>
+
+            <TextView
+                android:id="@+id/txthora6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.03"
+                android:text="1 tableta cada 12 horas durante 5 días via de administración oral"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                tools:textSize="14sp" />
+
+            <FrameLayout
+                android:id="@+id/Linea8"
+                android:layout_width="fill_parent"
+                android:layout_height="2px"
+                android:layout_span="8"
+                android:background="#000"></FrameLayout>
+
+            <TextView
+                android:id="@+id/txt8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.03"
+                android:text="5.- CEFTRIAXONA/LIDOCAINA SOLUCIÓN INYECTABLE 1GR/35MG/3.5 ML"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                tools:textSize="17sp" />
+
+            <FrameLayout
+                android:id="@+id/Linea9"
+                android:layout_width="fill_parent"
+                android:layout_height="2px"
+                android:layout_span="8"
+                android:background="#000"></FrameLayout>
+
+            <TextView
+                android:id="@+id/txthora8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.03"
+                android:text="1 inyeccion cada 24 horas durante 5 días via de administración oral"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                tools:textSize="14sp" />
+
+            <FrameLayout
+                android:id="@+id/Linea10"
+                android:layout_width="fill_parent"
+                android:layout_height="2px"
+                android:layout_span="8"
+                android:background="#000"></FrameLayout>
+
+            <TextView
+                android:id="@+id/txt5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.03"
+                android:text="6.- NEBULIZACIONES "
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                tools:textSize="17sp" />
+
+            <FrameLayout
+                android:id="@+id/Linea11"
+                android:layout_width="fill_parent"
+                android:layout_height="2px"
+                android:layout_span="8"
+                android:background="#000"
+                android:visibility="invisible"></FrameLayout>
+
+            <TextView
+                android:id="@+id/txthora5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.03"
+                android:text="Diarias por 10 días"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                tools:textSize="14sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

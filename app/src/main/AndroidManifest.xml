@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.practica1.elii.drapp">
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_launcher"
+        android:label="@string/app_name"
+        android:gravity="center"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Inicio"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".menu2"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".menu2">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".menu2"/>
+        </activity>
+
+
+            <activity android:name=".Receta"
+                android:screenOrientation="portrait"
+                android:parentActivityName=".menu2">
+                <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".menu2"/>
+            </activity>
+
+
+        <activity android:name=".confirmar_datos"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".menu2">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".menu2"/>
+        </activity>
+
+        <activity android:name=".expediente"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".menu2">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".menu2"/>
+        </activity>
+
+        <activity android:name=".recuperar_contrasena"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".menu2">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".menu2"/>
+        </activity>
+
+        <activity android:name=".registrar"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".menu2">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".menu2"/>
+        </activity>
+
+        <activity android:name=".citas"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".menu2">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".menu2"/>
+        </activity>
+
+        <activity android:name=".analisis"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".menu2">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".menu2"/>
+        </activity>
+
+        <activity android:name=".cancelacion"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".menu2">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".menu2"/>
+        </activity>
+
+    <activity android:name=".MainActivity"
+        android:screenOrientation="portrait"
+        android:parentActivityName=".menu2">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".menu2"/>
+
+    </activity>
+
+
+    </application>
+ 
+</manifest>

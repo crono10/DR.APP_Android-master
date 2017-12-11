@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.practica1.elii.drapp.analisis"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:id="@+id/email_login_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Anális Clínicos"
+                    android:textColor="#000"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginTop="15dp">
+
+                        <TextView
+                            android:id="@+id/cexamen"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5px"
+                            android:text="EXAMEN QUÍMICO"
+                            android:textColor="#00BFFF"
+                            android:textSize="21sp" />
+
+                        <TextView
+                            android:id="@+id/cvalor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:padding="5px"
+                            android:text="RESULTADO"
+                            android:textColor="#00BFFF"
+                            android:textSize="21sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/Separador"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <FrameLayout
+                            android:id="@+id/Linea"
+                            android:layout_width="fill_parent"
+                            android:layout_height="2px"
+                            android:layout_span="8"
+                            android:background="#000"></FrameLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginTop="15dp">
+                        <TextView
+                            android:id="@+id/glucosa"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5px"
+                            android:text="GLUCOSA"
+                            android:onClick="glucosa"
+                            android:textColor="#000"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/vglucosa"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0sp"
+                            android:gravity="center"
+                            android:padding="5px"
+                            android:text="  16 - 36 mg/dL"
+                            android:background="#FF0000"
+                            android:textColor="#000"
+                            android:textSize="16sp"
+                            tools:text="60 - 100 mg/dL " />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/Separador"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <FrameLayout
+                            android:id="@+id/Linea"
+                            android:layout_width="fill_parent"
+                            android:layout_height="2px"
+                            android:layout_span="8"
+                            android:background="#000">
+
+                        </FrameLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginTop="15dp">
+
+                        <TextView
+                            android:id="@+id/urea"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5px"
+                            android:text="COLESTEROL"
+                            android:onClick="colesterol"
+                            android:textColor="#000"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/vurea"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0sp"
+                            android:gravity="center"
+                            android:background="#04B431"
+                            android:padding="5px"
+                            android:text="16 - 36 mg/dL (enzimático)"
+                            android:textColor="#000"
+                            android:textSize="16sp" />
+                    </TableRow>
+                    <TableRow
+                        android:id="@+id/Separador"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <FrameLayout
+                            android:id="@+id/Linea"
+                            android:layout_width="fill_parent"
+                            android:layout_height="2px"
+                            android:layout_span="8"
+                            android:background="#000">
+                        </FrameLayout>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginTop="15dp">
+
+                        <TextView
+                            android:id="@+id/ucreatinina"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5px"
+                            android:text="HEMOGLOBINA"
+                            android:onClick="hemoglobina"
+                            android:textColor="#000"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/vcreatinina"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0sp"
+                            android:gravity="center"
+                            android:background="#F4FA58"
+                            android:padding="5px"
+                            android:text="0.75 - 1.2 mg/dL"
+                            android:textColor="#000"
+                            android:textSize="16sp" />
+                    </TableRow>
+                    <TableRow
+                        android:id="@+id/Separador"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <FrameLayout
+                            android:id="@+id/Linea"
+                            android:layout_width="fill_parent"
+                            android:layout_height="2px"
+                            android:layout_span="8"
+                            android:background="#000">
+                        </FrameLayout>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginTop="15dp">
+
+                        <TextView
+                            android:id="@+id/acidoUrico"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:padding="5px"
+                            android:text="LEUCOCITOS"
+                            android:onClick="leucocitos"
+                            android:textColor="#000"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/vacidoUrico"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0sp"
+                            android:gravity="center"
+                            android:padding="5px"
+                            android:text="2.5 - 5.4 mg/dL"
+                            android:background="#FF0000"
+                            android:textColor="#000"
+                            android:textSize="16sp"
+                            />
+                    </TableRow>
+                    <TableRow
+                        android:id="@+id/Separador"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <FrameLayout
+                            android:id="@+id/Linea"
+                            android:layout_width="fill_parent"
+                            android:layout_height="2px"
+                            android:layout_span="8"
+                            android:background="#000">
+                        </FrameLayout>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginTop="15dp">
+
+                        <TextView
+                            android:id="@+id/colesterol"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5px"
+                            android:text="ERITROCITOS"
+                            android:onClick="eritrocitos"
+                            android:textColor="#000"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/vcolesterol"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0sp"
+                            android:gravity="center"
+                            android:background="#F4FA58"
+                            android:padding="5px"
+                            android:text="150 - 200 mg/dL (ezimático)"
+                            android:textColor="#000"
+                            android:textSize="16sp" />
+                    </TableRow>
+                    <TableRow
+                        android:id="@+id/Separador"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <FrameLayout
+                            android:id="@+id/Linea"
+                            android:layout_width="fill_parent"
+                            android:layout_height="2px"
+                            android:layout_span="8"
+                            android:background="#000">
+                        </FrameLayout>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginTop="15dp">
+
+                        <TextView
+                            android:id="@+id/ldl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5px"
+                            android:text="UREA"
+                            android:onClick="urea"
+                            android:textColor="#000"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/vldl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0sp"
+                            android:gravity="center"
+                            android:padding="5px"
+                            android:text="130 - 160 mg/dL"
+                            android:background="#FF0000"
+                            android:textColor="#000"
+                            android:textSize="16sp" />
+                    </TableRow>
+                    <TableRow
+                        android:id="@+id/Separador"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <FrameLayout
+                            android:id="@+id/Linea"
+                            android:layout_width="fill_parent"
+                            android:layout_height="2px"
+                            android:layout_span="8"
+                            android:background="#000">
+                        </FrameLayout>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginTop="15dp">
+
+                        <TextView
+                            android:id="@+id/hdl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5px"
+                            android:text="CALCIO"
+                            android:onClick="calcio"
+                            android:textColor="#000"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/vhdl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0sp"
+                            android:gravity="center"
+                            android:background="#04B431"
+                            android:padding="5px"
+                            android:text="65 mg/dL"
+                            android:textColor="#000"
+                            android:textSize="16sp" />
+                    </TableRow>
+                    <TableRow
+                        android:id="@+id/Separador"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <FrameLayout
+                            android:id="@+id/Linea"
+                            android:layout_width="fill_parent"
+                            android:layout_height="2px"
+                            android:layout_span="8"
+                            android:background="#000">
+                        </FrameLayout>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginTop="15dp">
+
+                        <TextView
+                            android:id="@+id/trigliceridos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5px"
+                            android:text="TRIGLICERIDOS"
+                            android:onClick="trigliceridos"
+                            android:textColor="#000"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/vtrigliceridos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0sp"
+                            android:gravity="center"
+                            android:background="#F4FA58"
+                            android:padding="5px"
+                            android:text="200 mg/dL"
+                            android:textColor="#000"
+                            android:textSize="16sp" />
+                    </TableRow>
+                    <TableRow
+                        android:id="@+id/Separador"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <FrameLayout
+                            android:id="@+id/Linea"
+                            android:layout_width="fill_parent"
+                            android:layout_height="2px"
+                            android:layout_span="8"
+                            android:background="#000">
+                        </FrameLayout>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginTop="15dp">
+
+                        <TextView
+                            android:id="@+id/bilirrubinaT"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5px"
+                            android:text="BILIRRUBINA "
+                            android:onClick="bilirrubina"
+                            android:textColor="#000"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/vbilirrubinaT"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0sp"
+                            android:gravity="center"
+                            android:background="#04B431"
+                            android:padding="5px"
+                            android:text="0.1 - 1.2 mg/dL"
+                            android:textColor="#000"
+                            android:textSize="16sp" />
+                    </TableRow>
+                    <TableRow
+                        android:id="@+id/Separador"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <FrameLayout
+                            android:id="@+id/Linea"
+                            android:layout_width="fill_parent"
+                            android:layout_height="2px"
+                            android:layout_span="8"
+                            android:background="#000">
+                        </FrameLayout>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginTop="15dp">
+
+                        <TextView
+                            android:id="@+id/bilirrubinaD"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5px"
+                            android:text="PH"
+                            android:onClick="ph"
+                            android:textColor="#000"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/vbilirrubinaD"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0sp"
+                            android:gravity="center"
+                            android:padding="5px"
+                            android:text="0.3 mg/dL"
+                            android:background="#FF0000"
+                            android:textColor="#000"
+                            android:textSize="16sp" />
+                    </TableRow>
+                    <TableRow
+                        android:id="@+id/Separador"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <FrameLayout
+                            android:id="@+id/Linea"
+                            android:layout_width="fill_parent"
+                            android:layout_height="2px"
+                            android:layout_span="8"
+                            android:background="#000">
+                        </FrameLayout>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginTop="15dp">
+
+                        <TextView
+                            android:id="@+id/bilirrubinaI"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5px"
+                            android:text="BACTERIAS"
+                            android:onClick="bacterias"
+                            android:textColor="#000"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/vbilirrubinaI"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0sp"
+                            android:gravity="center"
+                            android:background="#F4FA58"
+                            android:padding="5px"
+                            android:text="0.75 - 1.2 mg/dL"
+                            android:textColor="#000"
+                            android:textSize="16sp" />
+                    </TableRow>
+
+
+                </TableLayout>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+    </ScrollView>
+
+
+</LinearLayout>
