@@ -4,7 +4,9 @@
     <modules>
       <module fileurl="file://C:\Users\Gio\AndroidStudioProjects\DR.APP_Android-master\DR.APP_Android.iml" filepath="C:\Users\Gio\AndroidStudioProjects\DR.APP_Android-master\DR.APP_Android.iml" />
       <module fileurl="file://$PROJECT_DIR$/DR.APP_Android-master.iml" filepath="$PROJECT_DIR$/DR.APP_Android-master.iml" />
+      <module fileurl="file://C:\Users\huero\Documents\GitHub\DR.APP_Android-master\DR.APP_Android-master.iml" filepath="C:\Users\huero\Documents\GitHub\DR.APP_Android-master\DR.APP_Android-master.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\huero\Documents\GitHub\DR.APP_Android-master\app\app.iml" filepath="C:\Users\huero\Documents\GitHub\DR.APP_Android-master\app\app.iml" />
     </modules>
   </component>
 </project>

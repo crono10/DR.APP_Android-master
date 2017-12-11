@@ -96,6 +96,7 @@ public class Inicio extends AppCompatActivity implements View.OnClickListener {
 
             case R.id.conectarse:
                 userLogin();
+
                 break;
 
         }
